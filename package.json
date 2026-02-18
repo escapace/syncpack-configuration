@@ -12,8 +12,8 @@
     "@commitlint/config-conventional": "20.4.1",
     "@escapace/pnpm-pack": "0.6.3",
     "prettier": "3.8.1",
-    "prettier-config-escapace": "^1.2.1",
-    "syncpack": "^14.0.0"
+    "prettier-config-escapace": "1.2.1",
+    "syncpack": "14.0.0"
   },
   "engines": {
     "pnpm": ">=10.29.2"
