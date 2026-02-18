@@ -1,0 +1,46 @@
+{
+  "name": "@escapace/syncpack-configuration",
+  "description": "escapace syncpack configuration",
+  "version": "0.0.0",
+  "author": {
+    "name": "escapace",
+    "email": "opensource@escapace.com"
+  },
+  "bugs": "https://github.com/escapace/syncpack-configuration/issues",
+  "devDependencies": {
+    "@commitlint/cli": "20.4.1",
+    "@commitlint/config-conventional": "20.4.1",
+    "@escapace/pnpm-pack": "0.6.3",
+    "prettier": "3.8.1",
+    "prettier-config-escapace": "^1.2.1",
+    "syncpack": "^14.0.0"
+  },
+  "engines": {
+    "pnpm": ">=10.29.2"
+  },
+  "files": [
+    ".syncpackrc.json"
+  ],
+  "homepage": "https://github.com/escapace/syncpack-configuration#readme",
+  "license": "MPL-2.0",
+  "main": ".syncpackrc.json",
+  "peerDependencies": {
+    "syncpack": "^14.0.0"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": "escapace/syncpack-configuration",
+  "scripts": {
+    "build": "echo None",
+    "format": "syncpack format && prettier --no-error-on-unmatched-pattern -uw .",
+    "pack": "pnpm-pack package --pack-destination lib",
+    "test": "syncpack lint",
+    "typecheck": "echo None",
+    "update": "ncu --cooldown 7 -p pnpm -u --peer --dep dev,peer,prod,optional"
+  },
+  "sideEffects": false,
+  "type": "module"
+}

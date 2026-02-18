@@ -1,0 +1,24 @@
+{
+  "customTypes": {
+    "nodeEngine": { "path": "engines.node", "strategy": "version" },
+    "optional": { "path": "optionalDependencies", "strategy": "versionsByName" }
+  },
+  "semverGroups": [
+    { "specifierTypes": ["range-complex", "unsupported", "link"], "isIgnored": true },
+    { "dependencyTypes": ["local", "overrides", "pnpmOverrides", "resolutions"], "range": "" },
+    { "dependencyTypes": ["dev"], "range": "" },
+    { "dependencyTypes": ["peer"], "range": "^" },
+    { "dependencyTypes": ["prod"], "range": "^" }
+  ],
+  "versionGroups": [
+    { "specifierTypes": ["range-complex", "unsupported", "link"], "isIgnored": true },
+    {
+      "dependencies": ["$LOCAL"],
+      "dependencyTypes": ["dev", "prod", "peer", "optional"],
+      "pinVersion": "workspace:*"
+    },
+    { "dependencyTypes": ["local"], "isIgnored": true },
+    { "dependencyTypes": ["peer"], "policy": "sameRange" },
+    { "dependencyTypes": ["prod"], "preferVersion": "highestSemver" }
+  ]
+}

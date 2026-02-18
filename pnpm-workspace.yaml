@@ -1,0 +1,19 @@
+blockExoticSubdeps: true
+childConcurrency: 1
+minimumReleaseAge: 10080
+minimumReleaseAgeExclude:
+  - syncpack
+  - syncpack-linux-x64
+  - syncpack-linux-x64-musl
+  - syncpack-linux-arm64
+  - syncpack-linux-arm64-musl
+  - syncpack-darwin-x64
+  - syncpack-darwin-arm64
+  - syncpack-windows-x64
+  - syncpack-windows-arm64
+  - '@escapace/*'
+  - eslint-config-escapace
+  - prettier-config-escapace
+
+strictDepBuilds: true
+trustPolicy: no-downgrade
