@@ -10,9 +10,9 @@
   "devDependencies": {
     "@commitlint/cli": "20.4.1",
     "@commitlint/config-conventional": "20.4.1",
-    "@escapace/pnpm-pack": "0.6.3",
+    "@escapace/pnpm-pack": "0.7.0",
     "prettier": "3.8.1",
-    "prettier-config-escapace": "1.2.1",
+    "prettier-config-escapace": "1.2.2",
     "syncpack": "14.0.0"
   },
   "engines": {
