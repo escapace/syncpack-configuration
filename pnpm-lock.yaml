@@ -15,14 +15,14 @@ importers:
         specifier: 20.4.1
         version: 20.4.1
       '@escapace/pnpm-pack':
-        specifier: 0.6.3
-        version: 0.6.3(@pnpm/logger@5.2.0)
+        specifier: 0.7.0
+        version: 0.7.0(@pnpm/logger@5.2.0)
       prettier:
         specifier: 3.8.1
         version: 3.8.1
       prettier-config-escapace:
-        specifier: 1.2.1
-        version: 1.2.1
+        specifier: 1.2.2
+        version: 1.2.2
       syncpack:
         specifier: 14.0.0
         version: 14.0.0
@@ -106,8 +106,8 @@ packages:
     resolution: {integrity: sha512-aO5l99BQJ0X34ft8b0h7QFkQlqxC6e7ZPVmBKz13xM9O8obDaM1Cld4sQlJDXXU/VFuUzQ30mVtHjVz74TuStw==}
     engines: {node: '>=v18'}
 
-  '@escapace/pnpm-pack@0.6.3':
-    resolution: {integrity: sha512-OZjrZvBaf6EtXFbqdNp5BUq/kRsGMjrlCSvsQBrmV7p8ZrJKMWBb9xtWgzrgvyzn6I1s9mk2UGGhFXVGqu36Ew==}
+  '@escapace/pnpm-pack@0.7.0':
+    resolution: {integrity: sha512-k0gnUpnZcN+PO3HVmx+SbQaFjwEk/WwL9KHo+yRW08JlNZDMLJf25k7QBniatmt4rnh0XRiO5OQxkIXCpEzg/A==}
     engines: {node: '>=24.13.0', pnpm: '>=10.29.2'}
     hasBin: true
 
@@ -433,6 +433,7 @@ packages:
   git-raw-commits@4.0.0:
     resolution: {integrity: sha512-ICsMM1Wk8xSGMowkOmPrzo2Fgmfo4bMHLNX6ytHjajRJUqvHOw/TFapQ+QG75c3X/tTDDhOSRPGC52dDbNM8FQ==}
     engines: {node: '>=16'}
+    deprecated: This package is no longer maintained. For the JavaScript API, please use @conventional-changelog/git-client instead.
     hasBin: true
 
   global-directory@4.0.1:
@@ -524,9 +525,9 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  isexe@3.1.5:
-    resolution: {integrity: sha512-6B3tLtFqtQS4ekarvLVMZ+X+VlvQekbe4taUkf/rhVO3d/h0M2rfARm/pXLcPEsjjMsFgrFgSrhQIxcSVrBz8w==}
-    engines: {node: '>=18'}
+  isexe@4.0.0:
+    resolution: {integrity: sha512-FFUtZMpoZ8RqHS3XeXEmHWLA4thH+ZxCv2lOiPIn1Xc7CxrqhWzNSDzD+/chS/zbYezmiwWLdQC09JdQKmthOw==}
+    engines: {node: '>=20'}
 
   jiti@2.6.1:
     resolution: {integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==}
@@ -660,8 +661,9 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  prettier-config-escapace@1.2.1:
-    resolution: {integrity: sha512-piOy4gQTfKum5UV8vnjdB3Ap0sCFtaOvTbo956JXOfpzrTONKb+hM5IO9APweRJPRv8cQFcoRD4hLmWSknJ0ng==}
+  prettier-config-escapace@1.2.2:
+    resolution: {integrity: sha512-taCRdqpCvU5QO5lFBbd07RhTMTUvuW74fq7bjPQwn+KRf2DP3Z38bV6d+AQ1UDVklQf8o6eIB1ACJ6r4IdF5ag==}
+    engines: {pnpm: '>=10.29.2'}
 
   prettier@3.8.1:
     resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
@@ -852,8 +854,8 @@ packages:
     engines: {node: '>= 8'}
     hasBin: true
 
-  which@6.0.0:
-    resolution: {integrity: sha512-f+gEpIKMR9faW/JgAgPK1D7mekkFoqbmiwvNzuhsHetni20QSgzg9Vhn0g2JSJkkfehQnqdUAx7/e15qS1lPxg==}
+  which@6.0.1:
+    resolution: {integrity: sha512-oGLe46MIrCRqX7ytPUf66EAYvdeMIZYn3WaocqqKZAxrBpkqHfL/qvTyJ/bTk5+AqHCjXmrv3CEWgy368zhRUg==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
 
@@ -1007,7 +1009,7 @@ snapshots:
       conventional-commits-parser: 6.2.1
       picocolors: 1.1.1
 
-  '@escapace/pnpm-pack@0.6.3(@pnpm/logger@5.2.0)':
+  '@escapace/pnpm-pack@0.7.0(@pnpm/logger@5.2.0)':
     dependencies:
       '@pnpm/lockfile-file': 9.1.3(@pnpm/logger@5.2.0)
       arg: 5.0.2
@@ -1016,7 +1018,7 @@ snapshots:
       find-up: 8.0.0
       fs-extra: 11.3.3
       semver: 7.7.4
-      which: 6.0.0
+      which: 6.0.1
     transitivePeerDependencies:
       - '@pnpm/logger'
       - domexception
@@ -1450,7 +1452,7 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  isexe@3.1.5: {}
+  isexe@4.0.0: {}
 
   jiti@2.6.1: {}
 
@@ -1560,7 +1562,7 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  prettier-config-escapace@1.2.1: {}
+  prettier-config-escapace@1.2.2: {}
 
   prettier@3.8.1: {}
 
@@ -1712,9 +1714,9 @@ snapshots:
     dependencies:
       isexe: 2.0.0
 
-  which@6.0.0:
+  which@6.0.1:
     dependencies:
-      isexe: 3.1.5
+      isexe: 4.0.0
 
   wrap-ansi@7.0.0:
     dependencies:
