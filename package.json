@@ -8,8 +8,8 @@
   },
   "bugs": "https://github.com/escapace/syncpack-configuration/issues",
   "devDependencies": {
-    "@commitlint/cli": "20.4.1",
-    "@commitlint/config-conventional": "20.4.1",
+    "@commitlint/cli": "20.4.2",
+    "@commitlint/config-conventional": "20.4.2",
     "@escapace/pnpm-pack": "0.7.0",
     "prettier": "3.8.1",
     "prettier-config-escapace": "1.2.2",
