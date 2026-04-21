@@ -15,6 +15,18 @@
     "prettier-config-escapace": "1.2.2",
     "syncpack": "14.3.0"
   },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^24.4.0",
+      "onFail": "error"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^10.29.2",
+      "onFail": "error"
+    }
+  },
   "engines": {
     "pnpm": ">=10.29.2"
   },

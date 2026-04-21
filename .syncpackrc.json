@@ -1,14 +1,27 @@
 {
+  "$schema": "https://unpkg.com/syncpack@latest/schema.json",
   "customTypes": {
-    "nodeEngine": { "path": "engines.node", "strategy": "version" },
-    "optional": { "path": "optionalDependencies", "strategy": "versionsByName" }
+    "engines": { "path": "engines", "strategy": "versionsByName" },
+    "optional": { "path": "optionalDependencies", "strategy": "versionsByName" },
+    "runtime": {
+      "path": "devEngines.runtime.version",
+      "strategy": "name~version",
+      "namePath": "devEngines.runtime.name"
+    },
+    "packageManager": {
+      "path": "devEngines.packageManager.version",
+      "strategy": "name~version",
+      "namePath": "devEngines.packageManager.name"
+    }
   },
   "semverGroups": [
     { "specifierTypes": ["range-complex", "unsupported", "link"], "isIgnored": true },
     { "dependencyTypes": ["local", "overrides", "pnpmOverrides", "resolutions"], "range": "" },
     { "dependencyTypes": ["dev"], "range": "" },
     { "dependencyTypes": ["peer"], "range": "^" },
-    { "dependencyTypes": ["prod"], "range": "^" }
+    { "dependencyTypes": ["prod"], "range": "^" },
+    { "dependencyTypes": ["engines"], "range": ">=" },
+    { "dependencyTypes": ["runtime", "packageManager"], "range": "^" }
   ],
   "versionGroups": [
     { "specifierTypes": ["range-complex", "unsupported", "link"], "isIgnored": true },
@@ -18,7 +31,9 @@
       "pinVersion": "workspace:*"
     },
     { "dependencyTypes": ["local"], "isIgnored": true },
-    { "dependencyTypes": ["peer"], "policy": "sameRange" },
-    { "dependencyTypes": ["prod"], "preferVersion": "highestSemver" }
+    { "dependencyTypes": ["peer"], "preferVersion": "highestSemver" },
+    { "dependencyTypes": ["prod"], "preferVersion": "highestSemver" },
+    { "dependencyTypes": ["engines"], "preferVersion": "lowestSemver" },
+    { "dependencyTypes": ["runtime", "packageManager"], "preferVersion": "highestSemver" }
   ]
 }
