@@ -11,7 +11,7 @@
     "@commitlint/cli": "20.5.0",
     "@commitlint/config-conventional": "20.5.0",
     "@escapace/pnpm-pack": "0.8.0",
-    "prettier": "3.8.2",
+    "prettier": "3.8.3",
     "prettier-config-escapace": "1.2.2",
     "syncpack": "14.3.0"
   },
