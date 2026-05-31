@@ -23,7 +23,7 @@
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "^10.33.0",
+      "version": "^11.5.0",
       "onFail": "warn"
     }
   },
@@ -33,10 +33,10 @@
   "homepage": "https://github.com/escapace/syncpack-configuration#readme",
   "license": "MPL-2.0",
   "main": ".syncpackrc.json",
-  "peerDependencies": {
-    "syncpack": "^15.3.1"
-  },
   "private": false,
+  "peerDependencies": {
+    "syncpack": "^15 || ^16"
+  },
   "publishConfig": {
     "access": "public",
     "provenance": true
