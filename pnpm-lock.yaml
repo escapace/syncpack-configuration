@@ -208,11 +208,11 @@ importers:
   .:
     devDependencies:
       '@commitlint/cli':
-        specifier: 21.0.1
-        version: 21.0.1(@types/node@25.5.2)(conventional-commits-parser@6.4.0)(typescript@6.0.2)
+        specifier: 21.0.2
+        version: 21.0.2(@types/node@25.5.2)(conventional-commits-parser@6.4.0)(typescript@6.0.2)
       '@commitlint/config-conventional':
-        specifier: 21.0.1
-        version: 21.0.1
+        specifier: 21.0.2
+        version: 21.0.2
       '@escapace/pnpm-pack':
         specifier: 0.9.1
         version: 0.9.1(@pnpm/logger@5.2.0)
@@ -236,13 +236,13 @@ packages:
     resolution: {integrity: sha512-qSs4ifwzKJSV39ucNjsvc6WVHs6b7S03sOh2OcHF9UHfVPqWWALUsNUVzhSBiItjRZoLHx7nIarVjqKVusUZ1Q==}
     engines: {node: '>=6.9.0'}
 
-  '@commitlint/cli@21.0.1':
-    resolution: {integrity: sha512-8vq10krmbJwBkvzXKhbs4o4JQEVscd3pqOlWuDUaDBwbeL694/P33UC29tZQFTAgPU9fVJ2+f2m3zw16yKWxHg==}
+  '@commitlint/cli@21.0.2':
+    resolution: {integrity: sha512-YMmfLbqBg+ZRvvmPhc+cilSQFrh/AgzVgCT1U/OifmUZEwPbvCtA8rN//YNaF9d5eoZphxVMGYtmwA2QgQORgg==}
     engines: {node: '>=22.12.0'}
     hasBin: true
 
-  '@commitlint/config-conventional@21.0.1':
-    resolution: {integrity: sha512-gRorrkfWOh/+V5X8GYWWbQvrzPczopGMS4CCNrQdHkK4xWElv82BDvIsDhJZWTlI7TazOlYea6VATufCsFs+sw==}
+  '@commitlint/config-conventional@21.0.2':
+    resolution: {integrity: sha512-P/ZRhryQmkj0Z0dY9FOoRwe3xkwJyyAdtXwt01NT2kuZttcG2CNYp1q5Ci3u+nDT2jcbJRw2kt13Czl1qKNPfg==}
     engines: {node: '>=22.12.0'}
 
   '@commitlint/config-validator@21.0.1':
@@ -1236,7 +1236,7 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.28.5': {}
 
-  '@commitlint/cli@21.0.1(@types/node@25.5.2)(conventional-commits-parser@6.4.0)(typescript@6.0.2)':
+  '@commitlint/cli@21.0.2(@types/node@25.5.2)(conventional-commits-parser@6.4.0)(typescript@6.0.2)':
     dependencies:
       '@commitlint/format': 21.0.1
       '@commitlint/lint': 21.0.2
@@ -1251,7 +1251,7 @@ snapshots:
       - conventional-commits-parser
       - typescript
 
-  '@commitlint/config-conventional@21.0.1':
+  '@commitlint/config-conventional@21.0.2':
     dependencies:
       '@commitlint/types': 21.0.1
       conventional-changelog-conventionalcommits: 9.3.1
