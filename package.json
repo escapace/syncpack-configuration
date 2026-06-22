@@ -11,9 +11,9 @@
     "@commitlint/cli": "21.0.2",
     "@commitlint/config-conventional": "21.0.2",
     "@escapace/pnpm-pack": "0.9.1",
-    "prettier": "3.8.3",
+    "prettier": "3.8.4",
     "prettier-config-escapace": "1.2.2",
-    "syncpack": "15.3.1"
+    "syncpack": "15.3.2"
   },
   "devEngines": {
     "runtime": {
